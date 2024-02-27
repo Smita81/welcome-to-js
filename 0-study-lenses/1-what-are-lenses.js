@@ -24,6 +24,7 @@ while (backwards === null) {
   backwards = prompt("enter something backwards, we'll reverse it");
   console.log(backwards);
 }
+let name = "Jhon"
 
 let fixed = '';
 for (let character of backwards) {
