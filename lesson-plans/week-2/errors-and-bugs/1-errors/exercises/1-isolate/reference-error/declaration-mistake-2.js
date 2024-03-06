@@ -3,28 +3,28 @@
 console.log('--- in execution phase ---');
 
 /*
-  environment:
+  environment: chrome
 
-  name:
-  message:
+  name: Uncaught ReferenceError
+  message: Cannot access 'isValidUserName' before initialization
 
-  location:
+  location: line 24, column 19
 
-  life cycle:
+  life cycle: execution phase
 
-  the mistake:
+  the mistake: using a variable before it is declared or defined
 
-  the fix(es):
+  the fix(es): declare the variable is undefined
 */
+
 
 const userName = 'chiobin';
 console.log('userName:', typeof userName, userName);
+let isValidUserName;
 
 if (userName.length > 3) {
   isValidUserName = true;
 }
-
-let isValidUserName;
 
 if (userName.length <= 3) {
   isValidUserName = false;

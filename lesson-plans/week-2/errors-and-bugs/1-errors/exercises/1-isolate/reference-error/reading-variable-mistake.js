@@ -3,20 +3,22 @@
 console.log('--- in execution phase ---');
 
 /*
-  environment:
+  environment: chrome
 
-  name:
-  message:
+  name: Uncaught ReferenceError
+  message: 'tomatoes' before initialization
 
-  location:
+  location: line 20, column 13
 
-  life cycle:
+  life cycle: execution phase 
 
-  the mistake:
+  the mistake:  using a variable before it is declared or defined
 
-  the fix(es):
+  the fix(es): declare the variable is undefined
 */
+
+let tomatoes = 'fresh';
 
 console.log(tomatoes);
 
-let tomatoes = 'fresh';
+

@@ -6,18 +6,17 @@ import {
 } from '../../../../../../../lib/dom-io/index.js';
 
 /*
-  environment:
+  environment: chrome
 
-  name:
-  message:
+  name: Uncaught SyntaxError
+  message: Unexpected token '+'
+  location: line 32, column 16
 
-  location:
+  life cycle: creation phase
 
-  life cycle:
+  the mistake: missing '=' in line 32
 
-  the mistake:
-
-  the fix(es):
+  the fix(es): replaced + by = 
 */
 
 whenFormDataChanges('user-data', () => {
@@ -29,7 +28,7 @@ whenFormDataChanges('user-data', () => {
 
   // --- repeat the text ---
 
-  let repeated + text + '\n' + text;
+  let repeated = text + '\n' + text;
 
   // --- display the repeated text ---
 
