@@ -6,20 +6,20 @@ console.log('--- in execution phase ---');
 
 
 /*
-  environment:
+  environment: chrome
 
-  name:
-  message:
+  name: Uncaught SyntaxError
+  message: Unexpected string
 
-  location:
+  location:line 23 column 42
 
-  life cycle:
+  life cycle: creation phase
 
-  the mistake:
+  the mistake: string used in wrong way
 
-  the fix(es):
+  the fix(es): used "" instead of '
 */
 
-const quotesInQuotes = 'remind yourself ''i can do this!'' at least once a day';
+const quotesInQuotes = "remind yourself 'i can do this!' at least once a day";
 
 
