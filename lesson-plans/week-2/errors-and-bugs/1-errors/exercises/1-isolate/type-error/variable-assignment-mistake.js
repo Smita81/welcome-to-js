@@ -6,22 +6,22 @@ console.log('--- in execution phase ---');
 
 
 /*
-  environment:
+  environment: chrome
 
-  name:
-  message:
+  name:Uncaught SyntaxError
+  message:Invalid left-hand side in assignment
 
-  location:
+  location:line 25, column 1
 
-  life cycle:
+  life cycle: execution phase 
 
-  the mistake:
+  the mistake: boolean value assigned as variable name
 
-  the fix(es):
+  the fix(es): with correct assigned value and variable
 */
 
 let isHappy = false;
 
-true = isHappy;
-
+isHappy = true;
+console.log(isHappy)
 
