@@ -7,21 +7,21 @@ console.log('--- in execution phase ---');
 
 
 /*
-  environment:
+  environment: chrome
 
-  name:
-  message:
+  name: Uncaught SyntaxError:
+  message: Unexpected number
 
-  location:
+  location: line 25, column 7
 
-  life cycle:
+  life cycle: execution phase
 
-  the mistake:
+  the mistake: variable name can not start with a number.
 
-  the fix(es):
+  the fix(es): using three instead of number
 */
 
 
-const 3 = 'three';
-
+const three = 'three'; 
+console.log (three)
 
